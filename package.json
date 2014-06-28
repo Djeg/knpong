@@ -4,7 +4,7 @@
   "description": "A simple super pong !",
   "main": "index.js",
   "scripts": {
-    "test": "gulp test"
+    "test": "./node_modules/.bin/gulp test"
   },
   "author": "David Jegat <david.jegat@gmail.com>",
   "license": "MIT",
