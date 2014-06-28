@@ -1,5 +1,5 @@
-KnPong
-======
+KnPong [![Build Status](https://travis-ci.org/Djeg/knpong.svg?branch=master)](https://travis-ci.org/Djeg/knpong)
+================================================================================================================
 
 Super ninja pong ++ !
 
