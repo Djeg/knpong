@@ -8,6 +8,7 @@
             height:  canvas.height
         };
         this.button            = undefined === button ? this.createButton() : button;
+        this.appendToBody      = undefined === button ? true : false;
         this.requestFullscreen = canvas.requestFullscreen ||
             canvas.mosRequestFullscreen ||
             canvas.webkitRequestFullscreen
@@ -64,7 +65,9 @@
     };
 
     FullscreenCanvas.prototype.init = function () {
-        window.document.getElementsByTagName('body')[0].appendChild(this.button);
+        if (this.appendToBody) {
+            window.document.getElementsByTagName('body')[0].appendChild(this.button);
+        }
 
         this.bindEvents();
     };

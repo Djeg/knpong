@@ -17,8 +17,6 @@ describe('A fullscreen canvas', function () {
 
         fullscreen.init();
 
-        expect(window.document.getElementsByTagName).toHaveBeenCalledWith('body');
-        expect(body.appendChild).toHaveBeenCalledWith(button);
         expect(fullscreen.bindEvents).toHaveBeenCalled();
     });
 
